@@ -5,19 +5,28 @@ body {
       width: 100%;
       height: 100px;
       display: flex;
-      gap: 500px;
+      justify-content: space-around;
       padding: 30px;
       background-color: rgba(245, 245, 245, 0.836);
       border-radius: 50px;
       position: sticky;
       top: 0;
 
+      .switch {
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+      }
       h1 {
         font-family: wolf;
       }
       .project {
+        width: 500px;
         display: flex;
-        gap: 100px;
+        justify-content: space-evenly;
       }
     }
     header {
@@ -28,5 +37,22 @@ body {
         align-items: center;
       }
     }
+  }
+}
+.darkBody {
+  background-image: linear-gradient(#2c3e50, #000000);
+  .darknav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: rgba(76, 18, 95, 0.893);
+    border-radius: 50px;
+    position: sticky;
+    top: 0;
+  }
+  .darkcard {
+    background-color: rgb(177, 21, 21);
   }
 }
